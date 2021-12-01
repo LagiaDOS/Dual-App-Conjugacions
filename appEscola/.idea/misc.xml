@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_arrodonit.xml" value="0.287109375" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_correcte.xml" value="0.287109375" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/fons_gradient.xml" value="0.287109375" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout-v26/activity_pregunta_correcte.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta.xml" value="0.22" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta_correcte.xml" value="0.22" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_tenda.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_arrodonit.xml" value="0.2203125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_pregunta.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/drawable/imatge_arrodonida.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/font/redhattext.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_llista_preguntes.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta.xml" value="0.14" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta_correcte.xml" value="0.1078125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/element_categoria.xml" value="0.15" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/element_llista.xml" value="0.16" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.67" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

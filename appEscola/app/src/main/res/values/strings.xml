@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">appEscola</string>
+    <string name="comencar">Començar</string>
+    <string name="benvinguda">Benvingut/da!</string>
+    <string name="benvingudaSubtext">Comença la teva aventura amb els verbs</string>
+    <string name="preguntes">Preguntes</string>
+    <string name="facil">Fàcil</string>
+    <string name="mitja">Mitjà</string>
+    <string name="dificil">Difícil</string>
+    <string name="preg1">Pregunta 1</string>
+    <string name="preg2">Pregunta 2</string>
+    <string name="preg3">Pregunta 3</string>
+    <string name="preg4">Pregunta 4</string>
+    <string name="preg5">Pregunta 5</string>
+    <string name="preg">Pregunta</string>
+    <string name="tenda">Tenda</string>
+    <string name="puntsActuals">Punts actuals:\u0020</string>
+    <string name="reclamar">RECLAMAR</string>
+    <string name="correcte">CORRECTE</string>
+    <string name="seguentPregunta">Següent pregunta</string>
+    <string name="puntsAfegir">+100 punts</string>
+</resources>
