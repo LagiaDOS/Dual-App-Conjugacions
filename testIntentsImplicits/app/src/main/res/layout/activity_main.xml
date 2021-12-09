@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/botoWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obrir pàgina web"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            tools:text="Obrir pàgina web" />
+
+        <Button
+            android:id="@+id/btnTelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trucada de telèfon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            tools:text="Trucada de telèfon" />
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Maps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <Button
+            android:id="@+id/btnFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fer foto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <Button
+            android:id="@+id/btnCorreu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar correu"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

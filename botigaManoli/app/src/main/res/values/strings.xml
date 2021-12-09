@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">botigaManoli</string>
+    <string name="title_activity_element">activity_element</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="comentari">Escriu un comentari</string>
+    <string name="categoria">Categoria</string>
+    <string name="preu">Preu</string>
+    <string name="fabricant">Fabricant</string>
+    <string name="desar">Desar canvis</string>
+    <string name="empresa">Botiga Manoli</string>
+    <string name="telefon">Telèfon</string>
+    <string name="valTelefon">+34982175158</string>
+    <string name="email">Email</string>
+    <string name="valEmail">info@botigamanoli.com</string>
+    <string name="web">Pàgina web</string>
+    <string name="valWeb">https://www.botigamanolimillortenda.cat</string>
+    <string name="direccio">Direcció</string>
+    <string name="valDireccio">C/ de la Verge de Lord, 19, 25282 Sant Llorenç de Morunys, Lleida</string>
+    <string name="errorEmail">No hi ha cap aplicació per obrir aquesta acció.</string>
+    <string name="euros">€</string>
+    <string name="zero">0</string>
+    <string name="noFavorits">No tens cap producte favorit.</string>
+</resources>
