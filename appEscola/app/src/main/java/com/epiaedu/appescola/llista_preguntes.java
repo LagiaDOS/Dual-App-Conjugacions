@@ -34,16 +34,33 @@ public class llista_preguntes extends AppCompatActivity {
                     int result = activityResult.getResultCode();
                     Intent data = activityResult.getData();
 
+                    int posicio = data.getIntExtra("posicio", 0);
+
                     if (result == RESULT_OK) {
 
-                        int posicio = data.getIntExtra("posicio", 0);
 
-                        ((pregunta) arrayPreguntes.get(posicio)).setComplerta(true);
-                        adaptador.notifyDataSetChanged();
-                        desar();
+                        if (((pregunta) arrayPreguntes.get(posicio)).getComplerta()) {
+                            Intent myIntent = new Intent(llista_preguntes.this, pregunta_correcte.class);
+                            myIntent.putExtra("complerta", true);
+                            startActivity(myIntent);
+                        } else {
+                            ((pregunta) arrayPreguntes.get(posicio)).setComplerta(true);
+                            adaptador.notifyDataSetChanged();
+                            desar();
 
+                            Intent myIntent = new Intent(llista_preguntes.this, pregunta_correcte.class);
+                            myIntent.putExtra("complerta", false);
+                            startActivity(myIntent);
+                        }
+
+
+                    } else {
+                        Intent myIntent = new Intent(llista_preguntes.this, pregunta_incorrecte.class);
+                        startActivity(myIntent);
                     }
 
+                    //Retorna a l'usuari a l'última pregunta que va clicar, per tant de no estar tota l'estona lliscant cap amunt
+                    llista.smoothScrollToPosition(posicio);
                 }
             }
 
@@ -72,8 +89,6 @@ public class llista_preguntes extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int posicio, long id) {
                 if (llista.getItemAtPosition(posicio) instanceof pregunta) {
 
-
-                    String numPregunta = ((pregunta) llista.getItemAtPosition(posicio)).getNumero();
 
                     pregunta preguntaActual = (pregunta) llista.getItemAtPosition(posicio);
 
@@ -114,6 +129,177 @@ public class llista_preguntes extends AppCompatActivity {
                 "-ir",
                 "-ar"));
 
+        arrayPreguntes.add(new pregunta("Pregunta 2",
+                "Digues el present d'indicatiu de \"sopar\"",
+                "jo sopava",
+                "jo sopo",
+                "jo havia sopat",
+                "jo sopi",
+                "jo sopo"));
+
+        arrayPreguntes.add(new pregunta("Pregunta 3",
+                "Digues el imperfet d'indicatiu de \"agafar\"",
+                "jo agafava",
+                "jo hauré agafat",
+                "jo agafaré",
+                "jo hauria agafat",
+                "jo agafava"));
+
+        arrayPreguntes.add(new pregunta("Pregunta 4",
+                "De quina forma acaben els verbs de la segona conjugació?",
+                "-er/re",
+                "-re",
+                "-ir",
+                "-at",
+                "-er/re"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 5",
+                "Digues el condicional de \"guanyar\"",
+                "jo guanyi",
+                "jo hagués guanyat",
+                "jo guanyés",
+                "jo guanyaria",
+                "jo guanyaria"));
+
+
+        arrayPreguntes.add("Mitjà");
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 6",
+                "Digues el subjuntiu imperfet de \"lluitar\"",
+                "jo lluiti",
+                "jo lluités",
+                "jo hagi lluitat",
+                "jo hagués lluitat",
+                "jo lluités"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 7",
+                "Quin és el present indicatiu de la primera persona singular del verb aixafar?",
+                "aixafe",
+                "aixafo",
+                "aixafa",
+                "aixafes",
+                "aixafo"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 8",
+                "Com s'escriu el gerundi de \"ajeure\"?",
+                "ajaient",
+                "ajagut",
+                "ajaguet",
+                "ajagues",
+                "ajaient"));
+
+        arrayPreguntes.add(new pregunta("Pregunta 9",
+                "Quin és el indicatiu imperfet de la segona persona del singular del verb \"trencar\"?",
+                "trencadiu",
+                "trencavas",
+                "trencaves",
+                "trencaven",
+                "trencaves"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 10",
+                "Quin és el futur indicatiu de la tercera persona del singular del verb \"introduir\"?",
+                "introduiré",
+                "introduirem",
+                "introdueixes",
+                "introduirà",
+                "introduirà"));
+
+
+        arrayPreguntes.add("Difícil");
+
+        arrayPreguntes.add(new pregunta("Pregunta 1",
+                "Què és un verb irregular?",
+                "Un verb que no s'accentua mai",
+                "Un verb que té conjugacions uniformes",
+                "Un verb amb només 3 síl·labes",
+                "Un verb que no té participi",
+                "Un verb que té conjugacions uniformes"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 12",
+                "Quin és el present indicatiu de la primera persona singular del verb aixafar\n",
+                "aixafe",
+                "aixafo",
+                "aixafa",
+                "aixafes",
+                "aixafo"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 13",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 14",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 15",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 16",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 17",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 18",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""));
+
+        arrayPreguntes.add(new pregunta("Pregunta 19",
+                "Quin és el present subjuntiu de la tercera persona del plural del verb \"estar\"?",
+                "estigui",
+                "estiguin",
+                "estiguem",
+                "estiguen",
+                "estiguin"));
+
+
+        arrayPreguntes.add(new pregunta("Pregunta 20",
+                "Quin és el present subjuntiu de la segona persona del singular del verb \"agregar\"?",
+                "agreguis",
+                "agreguem",
+                "agregueu",
+                "agreguin",
+                "agreguis"));
+
 
     }
 
@@ -144,7 +330,7 @@ public class llista_preguntes extends AppCompatActivity {
             ArrayList arrayTemporal = new ArrayList();
 
             for (JsonElement json : arrayJSON) {
-                if (json.toString().contains("Fàcil")) {
+                if (json.toString().matches(".*\\b(Fàcil|Mitjà|Difícil)\\b.*")) {
                     arrayTemporal.add(gson.fromJson(json, String.class));
                 } else {
                     arrayTemporal.add(gson.fromJson(json, pregunta.class));

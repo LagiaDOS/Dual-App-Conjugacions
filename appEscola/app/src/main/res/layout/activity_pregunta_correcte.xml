@@ -12,13 +12,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_weight="1"
-
+        android:clickable="false"
         android:background="@drawable/boto_pregunta"
         android:backgroundTint="#026F00"
         android:fontFamily="@font/redhattext_bold"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/correcte"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#FFFFFF"
 
@@ -120,14 +120,14 @@
         app:layout_constraintGuide_percent="0.84" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/punts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:autoSizeTextType="uniform"
-        android:textSize="35sp"
         android:fontFamily="@font/redhattext_regular"
-        android:text="@string/puntsAfegir"
+        android:gravity="center_horizontal|center_vertical"
         android:textColor="@color/white"
+        android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline35"
         app:layout_constraintEnd_toStartOf="@+id/guideline30"
         app:layout_constraintStart_toStartOf="@+id/guideline26"

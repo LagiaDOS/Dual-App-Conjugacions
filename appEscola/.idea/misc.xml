@@ -5,12 +5,19 @@
       <map>
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_arrodonit.xml" value="0.287109375" />
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_correcte.xml" value="0.287109375" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_pregunta.xml" value="0.3828125" />
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/fons_gradient.xml" value="0.287109375" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/fons_pregunta_incorrecta.xml" value="0.3828125" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/drawable/fons_splashart.xml" value="0.3828125" />
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout-v26/activity_pregunta_correcte.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pantalla_splash.xml" value="0.22" />
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta.xml" value="0.22" />
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta_correcte.xml" value="0.22" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta_incorrecte.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_tenda.xml" value="0.22" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/element_categoria.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sheft/AndroidStudioProjects/appEscola/app/src/main/res/layout/element_llista.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_arrodonit.xml" value="0.2203125" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/drawable/boto_pregunta.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/drawable/imatge_arrodonida.xml" value="0.19583333333333333" />
@@ -19,6 +26,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta.xml" value="0.14" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_pregunta_correcte.xml" value="0.1078125" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/activity_tenda.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/element_categoria.xml" value="0.15" />
         <entry key="..\:/Users/User/AndroidStudioProjects/appEscola/app/src/main/res/layout/element_llista.xml" value="0.16" />
       </map>

@@ -1,22 +1,28 @@
 <resources>
     <string name="app_name">appEscola</string>
     <string name="comencar">Començar</string>
+    <string name="continuar">Continuar</string>
+    <string name="continuarSubtext">Pots continuar on ho vas deixar. Sempre n\'hi ha temps per aprendre!</string>
     <string name="benvinguda">Benvingut/da!</string>
     <string name="benvingudaSubtext">Comença la teva aventura amb els verbs</string>
     <string name="preguntes">Preguntes</string>
-    <string name="facil">Fàcil</string>
-    <string name="mitja">Mitjà</string>
-    <string name="dificil">Difícil</string>
-    <string name="preg1">Pregunta 1</string>
-    <string name="preg2">Pregunta 2</string>
-    <string name="preg3">Pregunta 3</string>
-    <string name="preg4">Pregunta 4</string>
-    <string name="preg5">Pregunta 5</string>
+
     <string name="preg">Pregunta</string>
     <string name="tenda">Tenda</string>
     <string name="puntsActuals">Punts actuals:\u0020</string>
-    <string name="reclamar">RECLAMAR</string>
-    <string name="correcte">CORRECTE</string>
-    <string name="seguentPregunta">Següent pregunta</string>
+    <string name="reclamar">Reclamar</string>
+    <string name="correcte">Correcte</string>
+    <string name="incorrecte">Incorrecte</string>
+    <string name="seguentPregunta">Retornar a la llista</string>
+    <string name="noPunts">+0 punts</string>
     <string name="puntsAfegir">+100 punts</string>
+    <string name="dosMilPunts">2000 punts</string>
+    <string name="milPunts">1000 punts</string>
+    <string name="vuitcentsPunts">850 punts</string>
+    <string name="medallaOr">Medalla d\'or</string>
+    <string name="medallaPlata">Medalla de plata</string>
+    <string name="medallaBronze">Medalla de bronze</string>
+    <string name="recompensaOk">Recompensa reclamada amb èxit</string>
+    <string name="recompensaFail">Error al reclamar la recompensa: </string>
+    <string name="sensePunts">No tens els punts suficients per reclamar la recompensa</string>
 </resources>
