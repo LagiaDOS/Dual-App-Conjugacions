@@ -59,20 +59,17 @@ public class adaptadorPreguntes extends ArrayAdapter<Object> {
 
         Object elementActual = getItem(position);
 
-       // if (llistaItem == null) {
 
-         //   LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        switch (tipus) {
+            case ESPREGUNTA:
+                llistaItem = LayoutInflater.from(getContext()).inflate(R.layout.element_llista, parent, false);
+                break;
 
-            switch (tipus) {
-                case ESPREGUNTA:
-                    llistaItem =  LayoutInflater.from(getContext()).inflate(R.layout.element_llista, parent, false);
-                    break;
+            case ESCATEGORIA:
+                llistaItem = LayoutInflater.from(getContext()).inflate(R.layout.element_categoria, parent, false);
+                break;
+        }
 
-                case ESCATEGORIA:
-                    llistaItem = LayoutInflater.from(getContext()).inflate(R.layout.element_categoria, parent, false);
-                    break;
-            }
-     //   }
 
         if (elementActual != null) {
             switch (tipus) {
@@ -103,7 +100,7 @@ public class adaptadorPreguntes extends ArrayAdapter<Object> {
                     TextView titolCategoria = llistaItem.findViewById(R.id.titolCategoria);
 
 
-                   titolCategoria.setText(categoriaActual);
+                    titolCategoria.setText(categoriaActual);
 
                     break;
 

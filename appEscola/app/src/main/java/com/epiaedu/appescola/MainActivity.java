@@ -16,7 +16,15 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+/*Coses a fer:
 
+
+Fer que les recompenses funcionin per API 28 o inferior
+Afegir mes imatges a les activities
+Canviar l'interficie per que sigui 100% responsive
+Optimizar codi (afegir mes coses a metodes, canviar noms de variables)
+
+  */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

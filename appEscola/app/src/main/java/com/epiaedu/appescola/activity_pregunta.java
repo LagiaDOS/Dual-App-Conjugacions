@@ -33,6 +33,8 @@ public ArrayList<Object> arrayPreguntes;
     public Button opcio3;
     public Button opcio4;
 
+    public int valPosicio;
+
     public tenda tenda;
 
     @Override
@@ -53,7 +55,7 @@ public ArrayList<Object> arrayPreguntes;
         opcio4 = findViewById(R.id.opcio4);
 
 
-        Integer valPosicio = getIntent().getExtras().getInt("posicio");
+        valPosicio = getIntent().getExtras().getInt("posicio");
         String valPregunta = getIntent().getExtras().getString("numero");
         String valEnunciat = getIntent().getExtras().getString("enunciat");
         String valOpcio1 = getIntent().getExtras().getString("opcio1");
@@ -93,7 +95,7 @@ public ArrayList<Object> arrayPreguntes;
                 } else {
                     Intent intent = new Intent();
                     intent.putExtra("posicio", valPosicio);
-                    setResult(RESULT_CANCELED, intent);
+                    setResult(5, intent);
                     finish();
 
                 }
@@ -127,7 +129,7 @@ public ArrayList<Object> arrayPreguntes;
                 } else {
                     Intent intent = new Intent();
                     intent.putExtra("posicio", valPosicio);
-                    setResult(RESULT_CANCELED, intent);
+                    setResult(5, intent);
                     finish();
                 }
             }
@@ -160,7 +162,7 @@ public ArrayList<Object> arrayPreguntes;
                 } else {
                     Intent intent = new Intent();
                     intent.putExtra("posicio", valPosicio);
-                    setResult(RESULT_CANCELED, intent);
+                    setResult(5, intent);
                     finish();
                 }
             }
@@ -192,19 +194,30 @@ public ArrayList<Object> arrayPreguntes;
                 } else {
                     Intent intent = new Intent();
                     intent.putExtra("posicio", valPosicio);
-                    setResult(RESULT_CANCELED, intent);
+                    setResult(5, intent);
                     finish();
                 }
             }
         });
 
+
+
+
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent();
+        intent.putExtra("posicio", valPosicio);
+        setResult(RESULT_CANCELED, intent);
+        finish();
+
+    }
 
     public void setDades(String valPregunta, String valEnunciat, String valOpcio1, String valOpcio2, String valOpcio3, String valOpcio4) {
         //Agafa les dades que s'han passat per l'intent i les aplica
 
-      //  pregunta.setText((pregunta) arrayPreguntes.get(3));
+        pregunta.setText(valPregunta);
         enunciat.setText(valEnunciat);
         opcio1.setText(valOpcio1);
         opcio2.setText(valOpcio2);
@@ -212,4 +225,6 @@ public ArrayList<Object> arrayPreguntes;
         opcio4.setText(valOpcio4);
 
     }
+
+
 }

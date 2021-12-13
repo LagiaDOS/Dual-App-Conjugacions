@@ -27,6 +27,8 @@ import java.util.List;
 
 public class llista_preguntes extends AppCompatActivity {
 
+    private int RESULT_INCORRECT = 5;
+
     private ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -54,10 +56,11 @@ public class llista_preguntes extends AppCompatActivity {
                         }
 
 
-                    } else {
+                    } else if (result == RESULT_INCORRECT) {
                         Intent myIntent = new Intent(llista_preguntes.this, pregunta_incorrecte.class);
                         startActivity(myIntent);
                     }
+
 
                     //Retorna a l'usuari a l'última pregunta que va clicar, per tant de no estar tota l'estona lliscant cap amunt
                     llista.smoothScrollToPosition(posicio);
@@ -176,7 +179,7 @@ public class llista_preguntes extends AppCompatActivity {
 
 
         arrayPreguntes.add(new pregunta("Pregunta 7",
-                "Quin és el present indicatiu de la primera persona singular del verb aixafar?",
+                "Quin és el indicatiu imperfet de la segona persona del singular del verb \"aixafar\"?",
                 "aixafe",
                 "aixafo",
                 "aixafa",
@@ -212,7 +215,7 @@ public class llista_preguntes extends AppCompatActivity {
 
         arrayPreguntes.add("Difícil");
 
-        arrayPreguntes.add(new pregunta("Pregunta 1",
+        arrayPreguntes.add(new pregunta("Pregunta 11",
                 "Què és un verb irregular?",
                 "Un verb que no s'accentua mai",
                 "Un verb que té conjugacions uniformes",
@@ -222,66 +225,66 @@ public class llista_preguntes extends AppCompatActivity {
 
 
         arrayPreguntes.add(new pregunta("Pregunta 12",
-                "Quin és el present indicatiu de la primera persona singular del verb aixafar\n",
-                "aixafe",
-                "aixafo",
-                "aixafa",
-                "aixafes",
-                "aixafo"));
+                "Digues el temps verbal d'aquest verb indicatiu: ell hauria descansat",
+                "Imperfet",
+                "Passat simple",
+                "Futur",
+                "Condicional perfet",
+                "Condicional perfet"));
 
 
         arrayPreguntes.add(new pregunta("Pregunta 13",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""));
+                "Quin és el passat indicatiu de la segona persona del plural del verb \"oir\"?",
+                "oireu",
+                "oida",
+                "oi",
+                "oiren",
+                "oireu"));
 
 
         arrayPreguntes.add(new pregunta("Pregunta 14",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""));
+                "Quin és el passat indicatiu de la primera persona del plurar del verb \"espiar\"?",
+                "espiarem",
+                "espia",
+                "espiariem",
+                "espiaren",
+                "espiarem"));
 
 
         arrayPreguntes.add(new pregunta("Pregunta 15",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""));
+                "Quin és el futur indicatiu de la primera persona del singular del verb \"espatllar\"?",
+                "espatgina",
+                "espatllaré",
+                "espatllaran",
+                "espatlla",
+                "espatllaré"));
 
 
         arrayPreguntes.add(new pregunta("Pregunta 16",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""));
+                "Quin és el present condicional de la primera persona del plural del verb \"viure\"?",
+                "viurien",
+                "viuria",
+                "viuriues",
+                "viuriem",
+                "viuriem"));
 
 
         arrayPreguntes.add(new pregunta("Pregunta 17",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""));
+                "Quin és el gerundi del verb \"pertànyer\"?",
+                "pertanyut",
+                "pertanyent",
+                "pertanguides",
+                "pertangut",
+                "pertanyent"));
 
 
         arrayPreguntes.add(new pregunta("Pregunta 18",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""));
+                "Quin és el infinitu de \"cabut\"?",
+                "cabent",
+                "cabida",
+                "cabre",
+                "cabet",
+                "cabre"));
 
         arrayPreguntes.add(new pregunta("Pregunta 19",
                 "Quin és el present subjuntiu de la tercera persona del plural del verb \"estar\"?",
